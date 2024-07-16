@@ -1,0 +1,59 @@
+:root{
+    --primary-color: #ff6b6b;
+    --secondary-color: #794afa;
+    --secondary-dark-color: #453c5c;
+    --white-color: #ffff;
+
+    /* size */
+    --padding: 15px;
+    --border-radius: 5px;   
+    --font-size : 20px;  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}   
+
+.form{
+    background-color: var(--white-color);
+    padding: 20px;
+    margin : 0 auto;
+    border-radius: var(--border-radius);
+    min-width: 400px;
+    box-shadow: 0 0 10px 2px var(--secondary-dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.form input, .form textarea, .form button{
+    padding: var(--padding);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+}
+.form input:focus, .form textarea:focus{
+    outline: none;
+}
+.form input:hover, .form textarea:hover{
+    border-color: var(--primary-color);
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+}

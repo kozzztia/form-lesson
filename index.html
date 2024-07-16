@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form" >
+
+        <label for="username">
+            Повне ім'я
+            <input type="text" name="username" id="username" required>
+        </label>
+
+        <label for="email">
+            Email
+            <input type="email" name="email" id="email" required>
+        </label>
+
+
+        <label for="password">
+            Пароль
+            <input type="password" name="password" id="password" required>
+        </label>
+ 
+
+        <label for="passwordExamination">
+            Пароль ще раз
+            <input type="password" name="passwordExamination" id="passwordExamination" required>
+        </label>
+ 
+        <label for="sex" >Стать
+            <input type="radio" name="sex" id="sex" value="male" checked>
+            <label for="sex">Чоловік</label>
+            <input type="radio" name="sex" id="sex" value="female">
+            <label for="sex">Жінка</label>
+        </label>
+
+        <label for="age">
+            Вік
+            <input type="number" name="age" id="age">
+        </label>
+
+        <label for="'course">
+            Курс
+            <select name="course" id="course">
+                <option value="fe">Front-End</option>
+                <option value="be">Back-End</option>
+                <option value="pm">Project Management</option>
+                <option value="qa">QA Manual</option>
+            </select>
+        </label>
+
+        <label for="adress">
+            Адреса
+            <textarea name="adress" id="adress" cols="20" rows="5" 
+                placeHolder="Краъна. Регіон. місто.селище, вулиця, будинок">
+            </textarea>
+        </label>
+
+        <label for="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            Я хочу отримувати спам
+        </label>
+
+        <legend class="buttons">
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареэструватися</button>
+        </legend>
+    </form>
+    
+</body>
+</html>
