@@ -38,11 +38,14 @@ body{
     justify-content: center;
     gap: 10px;
 }
-.form input, .form textarea, .form button{
+.form input:not([type="radio"], [type="checkbox"]), .form textarea, .form button, label>select{
     padding: var(--padding);
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
-    font-size: var(--font-size);
+    width: 200px;
+}
+input[type="radio"], [type="checkbox"]{
+   margin :10px;
 }
 .form input:focus, .form textarea:focus{
     outline: none;
@@ -50,10 +53,23 @@ body{
 .form input:hover, .form textarea:hover{
     border-color: var(--primary-color);
 }
+label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+textarea{
+    resize: none;
+    margin-left : 20px;
+}
+label>input:first-child, label textarea, label>select{
+    margin-left: auto;
+}
 
 
 
 .buttons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }

@@ -31,21 +31,21 @@
             <input type="password" name="passwordExamination" id="passwordExamination" required>
         </label>
  
-        <label for="sex" >Стать
+        <label for="sex">Стать
             <input type="radio" name="sex" id="sex" value="male" checked>
             <label for="sex">Чоловік</label>
             <input type="radio" name="sex" id="sex" value="female">
             <label for="sex">Жінка</label>
         </label>
 
-        <label for="age">
+        <label for="age" >
             Вік
-            <input type="number" name="age" id="age">
+            <input type="number" name="age" id="age" min="18" max="100">
         </label>
 
         <label for="'course">
             Курс
-            <select name="course" id="course">
+            <select name="course" id="course" required>
                 <option value="fe">Front-End</option>
                 <option value="be">Back-End</option>
                 <option value="pm">Project Management</option>
@@ -53,14 +53,12 @@
             </select>
         </label>
 
-        <label for="adress">
+        <label for="address" >
             Адреса
-            <textarea name="adress" id="adress" cols="20" rows="5" 
-                placeHolder="Краъна. Регіон. місто.селище, вулиця, будинок">
-            </textarea>
+            <textarea name="address" id="address" cols="20" rows="5" placeholder="Країна. Регіон. Місто. Селище, вулиця, будинок"></textarea>
         </label>
 
-        <label for="checkbox">
+        <label for="checkbox" required>
             <input type="checkbox" name="checkbox" id="checkbox">
             Я хочу отримувати спам
         </label>
