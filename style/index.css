@@ -38,19 +38,20 @@ body{
     justify-content: center;
     gap: 10px;
 }
-.form input:not([type="radio"], [type="checkbox"]), .form textarea, .form button, label>select{
+.form input:not([type="radio"], [type="checkbox"]), .form textarea, .form button, label select{
     padding: var(--padding);
     border: 1px solid var(--secondary-color);
     border-radius: var(--border-radius);
     width: 200px;
 }
+
 input[type="radio"], input[type="checkbox"]{
    margin :10px;
 }
-.form input:focus, .form textarea:focus{
+.form input:focus, .form textarea:focus, .form button:focus, label select:focus{
     outline: none;
 }
-.form input:hover, .form textarea:hover{
+.form input:hover, .form textarea:hover, .form button:hover, label select:hover{
     border-color: var(--primary-color);
 }
 label{
