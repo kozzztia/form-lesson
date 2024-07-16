@@ -44,7 +44,7 @@ body{
     border-radius: var(--border-radius);
     width: 200px;
 }
-input[type="radio"], [type="checkbox"]{
+input[type="radio"], input[type="checkbox"]{
    margin :10px;
 }
 .form input:focus, .form textarea:focus{
@@ -59,15 +59,21 @@ label{
     align-items: center;
     justify-content: space-between;
 }
+
 textarea{
     resize: none;
     margin-left : 20px;
 }
 label>input:first-child, label textarea, label>select{
     margin-left: auto;
+} 
+
+.form>label:has(input[type='checkbox'])>input{
+    margin-left: 0;
 }
-
-
+.form>label:has(input[type='checkbox'])>p{
+    width :100%;
+}
 
 .buttons{
     display: flex;
