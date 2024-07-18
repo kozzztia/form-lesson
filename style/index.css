@@ -31,52 +31,13 @@ body{
     padding: 20px;
     margin : 0 auto;
     border-radius: var(--border-radius);
-    min-width: 400px;
+    width: 400px;
     box-shadow: 0 0 10px 2px var(--secondary-dark-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-.form input:not([type="radio"], [type="checkbox"]), .form textarea, .form button, label select{
-    padding: var(--padding);
-    border: 1px solid var(--secondary-color);
-    border-radius: var(--border-radius);
-    width: 200px;
-}
-
-input[type="radio"], input[type="checkbox"]{
-   margin :10px;
-}
-.form input:focus, .form textarea:focus, .form button:focus, label select:focus{
-    outline: none;
-}
-.form input:hover, .form textarea:hover, .form button:hover, label select:hover{
-    border-color: var(--primary-color);
-}
 label{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-textarea{
-    resize: none;
-    margin-left : 20px;
-}
-label>input:first-child, label textarea, label>select{
-    margin-left: auto;
-} 
-
-.form>label:has(input[type='checkbox'])>input{
-    margin-left: 0;
-}
-.form>label:has(input[type='checkbox'])>p{
-    width :100%;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
+    cursor: pointer;
 }

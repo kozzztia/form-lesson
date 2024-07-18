@@ -10,63 +10,62 @@
     <form class="form" >
 
         <label for="username">
-            <p>Повне ім'я</p>
-            <input type="text" name="username" id="username" required>
+            Повне ім'я
         </label>
+        <input type="text" name="username" id="username" required>
 
         <label for="email">
-            <p>Email</p>
-            <input type="email" name="email" id="email" required>
+            Email
         </label>
+        <input type="email" name="email" id="email" required>
 
 
         <label for="password">
-            <p>Пароль</p>
-            <input type="password" name="password" id="password" required>
+            Пароль
         </label>
- 
+        <input type="password" name="password" id="password" required>
 
         <label for="passwordExamination">
-            <p>Пароль ще раз</p>
-            <input type="password" name="passwordExamination" id="passwordExamination" required>
+            Пароль ще раз
         </label>
+        <input type="password" name="passwordExamination" id="passwordExamination" required>
  
-        <label for="sex">Стать
-            <input type="radio" name="sex" id="sex" value="male" checked>
-            <label for="sex">Чоловік</label>
-            <input type="radio" name="sex" id="sex" value="female">
-            <label for="sex">Жінка</label>
-        </label>
+        <span>
+            Стать
+        </span>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Чоловік</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Жінка</label>
 
         <label for="age" >
-            <p>Вік</p>
-            <input type="number" name="age" id="age" min="18" max="100">
+            Вік
         </label>
+        <input type="number" name="age" id="age" min="18" max="100">
+
 
         <label for="'course">
-            <p>Курс</p>
-            <select name="course" id="course" required>
-                <option value="fe">Front-End</option>
-                <option value="be">Back-End</option>
-                <option value="pm">Project Management</option>
-                <option value="qa">QA Manual</option>
-            </select>
+            Курс
         </label>
+        <select name="course" id="course" required>
+            <option value="fe">Front-End</option>
+            <option value="be">Back-End</option>
+            <option value="pm">Project Management</option>
+            <option value="qa">QA Manual</option>
+        </select>
 
         <label for="address" >
-            <p>Адресc</p>
-            <textarea name="address" id="address" cols="20" rows="5" placeholder="Країна. Регіон. Місто. Селище, вулиця, будинок"></textarea>
+            Адресc
         </label>
+        <textarea name="address" id="address" cols="20" rows="5" placeholder="Країна. Регіон. Місто. Селище, вулиця, будинок"></textarea>
 
         <label for="checkbox" required>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <p>Я хочу отримувати спам</p>
+            Я хочу отримувати спам
         </label>
+        <input type="checkbox" name="checkbox" id="checkbox">
 
-        <div class="buttons">
-            <button type="reset">Очистити форму</button>
-            <button type="submit">Зареэструватися</button>
-        </div>
+        <button type="reset">Очистити форму</button>
+        <button type="submit">Зареэструватися</button>
     </form>
     
 </body>
