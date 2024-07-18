@@ -31,13 +31,32 @@ body{
     padding: 20px;
     margin : 0 auto;
     border-radius: var(--border-radius);
-    width: 400px;
+    max-width: 450px;
     box-shadow: 0 0 10px 2px var(--secondary-dark-color);
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 10px;
 }
 label{
     cursor: pointer;
+    text-align: start;
+}
+
+form>*{
+    width :45%;
+}
+
+span:has(input){
+    text-align: right;
+}
+input:not([type="checkbox"], [type="radio"]), textarea, select, button{
+    border: none; 
+    padding: 5px;
+    outline: 1px solid #453c5c;
+}
+textarea{
+    resize: none;
 }
