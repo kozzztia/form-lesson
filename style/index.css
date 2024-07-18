@@ -8,6 +8,8 @@
     --padding: 15px;
     --border-radius: 5px;   
     --font-size : 20px;  
+    --padding : 20px;
+    --gap  : 10px;
 }
 
 *{
@@ -46,16 +48,22 @@ label{
 }
 
 form>*{
-    width :45%;
+    /* flex-basis : 45%; */
+    flex: calc(50% - var(--padding));
 }
 
 span:has(input){
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+
 }
 input:not([type="checkbox"], [type="radio"]), textarea, select, button{
     border: none; 
     padding: 5px;
     outline: 1px solid #453c5c;
+    border-radius: 1px;;
 }
 textarea{
     resize: none;
